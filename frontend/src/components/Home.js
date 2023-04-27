@@ -38,7 +38,7 @@ const Home = () => {
       {loading?  <Loader/>:(
         <Fragment>
    <MetaData title={'Buy Best Product Online'}/>
-    <h1 id="products_heading">Latest Products</h1>
+    <h1 class="text-center mx-auto" id="products_heading">Latest Products</h1>
     <section id="products" className="container mt-5">
     <div className="row">
 

@@ -22,7 +22,8 @@ const Header = () => {
     <nav className="navbar row">
       <div className="col-12 col-md-3">
         <div className="navbar-brand">
-          <img src="./images/logo.png" />
+          <Link to='/'>
+          <img src="./images/logo.png" /></Link>
         </div>
       </div>
       <div className="col-12 col-md-6 mt-2 mt-md-0">
@@ -37,7 +38,7 @@ const Header = () => {
         <span className="ml-1" id="cart_count">{Object.keys(cartItems).length}</span>
         {user? (
                       <div className="dropdown">
-                        <Link to="!#" className='dropbtn' 
+                        <Link to="/profile" className='dropbtn' 
                         type="button" id = "dropDownMenuButton" data-toggle="dropdown" 
                         aria-haspopup="true"  aria-expanded="false">
                           <figure className='avatar avatar-nav'>
